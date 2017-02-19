@@ -39,18 +39,21 @@ When you write your stored procedure in SQL, you know that it will run on every 
 [see reference.](http://www.w3resource.com/mysql/mysql-procedure.php)  
 **User Defined Funcitons (UDF)** are like Stored Procedures but can be accessed directly from Sql statements and does not need the CALL <sp-name> keyword to run. No DML allowed here. [Get more info here.](https://blogs.msdn.microsoft.com/pradeepsvs/2014/10/08/difference-between-a-stored-procedure-and-function/).  
 **SP examples**  
-####Define the stored procedure like this
-```DELIMITER //  
+####Define the stored procedure like this  
+
+```
+DELIMITER //  
 CREATE PROCEDURE GetOfficeByCountry(IN countryName VARCHAR(255))  
  BEGIN  
  SELECT *   
  FROM offices  
  WHERE country = countryName;  
  END //  
-DELIMITER ;  
-```
+DELIMITER;  
+```  
 ####And call the stored procedure like this
-`CALL GetOfficeByCountry('USA');` [See more here](http://www.mysqltutorial.org/stored-procedures-parameters.aspx).
+`CALL GetOfficeByCountry('USA');`  
+[See more here](http://www.mysqltutorial.org/stored-procedures-parameters.aspx).
 
 ##JDBC prepared statements
 Benefits are:  
