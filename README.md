@@ -21,11 +21,11 @@ In this week we will focus on
 [SQL Injection](https://www.w3schools.com/sql/sql_injection.asp)
 [Prepared Statement in JDBC](https://www.tutorialspoint.com/jdbc/preparestatement-object-example.htm)  
 [One angle on 3 Layer Architecture](http://www.tonymarston.net/php-mysql/3-tier-architecture.html)  
-[Data Mapper Pattern](https://martinfowler.com/eaaCatalog/dataMapper.html)
+[Data Mapper Pattern](https://martinfowler.com/eaaCatalog/dataMapper.html)  
 [Facade Pattern to enforce layers](https://www.tutorialspoint.com/design_pattern/facade_pattern.htm)  
 <hr>
 [MySql Transactions](http://www.mysqltutorial.org/mysql-transaction.aspx)  
-[JDBC Transactions](http://www.mysqltutorial.org/mysql-jdbc-transaction/)
+[JDBC Transactions](http://www.mysqltutorial.org/mysql-jdbc-transaction/)  
 [Exception Wrapping](http://tutorials.jenkov.com/java-exception-handling/exception-wrapping.html)  
 [Database unit testing example](http://tutorials.jenkov.com/java-unit-testing/database-testing-crud.html)  
 <hr>
