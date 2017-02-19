@@ -5,12 +5,12 @@ This week we will look at some more backend. We will build on the previous 2 wee
 
 In this week we will focus on
 **Day** | **Topic**  
----|---
-1 Performance | MySql Indexes and Stored Procedures
-2 Maintainability| Sql injection, Views, Data Mapper pattern and 3 layer architecture
-3 Transactions| Database transactions, Exception handling and Junit Testing
-4 MVC pattern | MVC pattern and JSP page views
-5 SP day | Studypoint exercise
+---|---  
+1 Performance | MySql Indexes and Stored Procedures  
+2 Maintainability| Sql injection, Views, Data Mapper pattern and 3 layer architecture  
+3 Transactions| Database transactions, Exception handling and Junit Testing  
+4 MVC pattern | MVC pattern and JSP page views  
+5 SP day | Studypoint exercise  
 
 ###Reading
 [MySql index](https://blog.viaduct.io/mysql-indexes-primer/)  
@@ -32,10 +32,10 @@ In this week we will focus on
 [MVC with JSP, Servlet and Backend](http://jansipke.nl/model-view-controller-mvc-with-jsp-and-jstl/)  
 [Forward vs. Redirect](http://javarevisited.blogspot.dk/2011/09/sendredirect-forward-jsp-servlet.html)  
 <hr>
-
-  
+####Sql injection  
 ![](img/sqlinjection.png)  
 <hr>
+####JSP life cycle
 ![](img/jspcycle.jpg)
 <hr>
 
