@@ -30,3 +30,9 @@ solution/
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/demo/SQLInjectionDemoDay2/nbproject/private/
+/demo/StoredProcedureDemoDay1/nbproject/private/
+/demo/SqlInjectionDemo/nbproject/
+/demo/StoredProcedureDemo/nbproject/
+/demo/StoredProcDemo/nbproject/
+/demo/StoredProcDemo/target/
