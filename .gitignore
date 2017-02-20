@@ -36,3 +36,4 @@ hs_err_pid*
 /demo/StoredProcedureDemo/nbproject/
 /demo/StoredProcDemo/nbproject/
 /demo/StoredProcDemo/target/
+/demo/SqlInjectionDemo/target/
