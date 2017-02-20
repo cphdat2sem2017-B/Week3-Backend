@@ -49,7 +49,7 @@ CREATE PROCEDURE GetOfficeByCountry(IN countryName VARCHAR(255))
  FROM offices  
  WHERE country = countryName;  
  END //  
-DELIMITER;  
+DELIMITER //  
 ```  
 ####And call the stored procedure like this
 `CALL GetOfficeByCountry('USA');`  
