@@ -12,7 +12,7 @@ import java.sql.SQLException;
  */
 public class ProcDemo {
 //    
-    PreparedStatement pstmt = null;
+    PreparedStatement cusByIdPstmt = null;
 
     public String getPriceLevel(int pno) {
         String level = null;
@@ -30,32 +30,26 @@ public class ProcDemo {
 
     public String getCustomerById(int id) {
         String cname = null;
-        pstmt = createStatement();
                 
         try {
-            pstmt.setInt(1, id);
-            ResultSet rs = pstmt.executeQuery();
+            if(cusByIdPstmt == null)
+                cusByIdPstmt = createcusByIdPstmt();
+            cusByIdPstmt.setInt(1, id);
+            ResultSet rs = cusByIdPstmt.executeQuery();
             rs.next();
             cname = rs.getString("cname");
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
             return cname;
-
     }
 
-    private PreparedStatement createStatement(){
-        
-        try {
-            String sql = "SELECT cname FROM customers WHERE cno = ?"; //prepared
+    private PreparedStatement createcusByIdPstmt() throws SQLException{
+            String sql = "SELECT cname FROM customers WHERE cno = ?"; //prepared statement
 //            String sql2 = "SELECT cname FROM customers WHERE cno ="+id; //alm statement
             Connection conn = DB.getConnection();
-            pstmt = conn.prepareStatement(sql);
-            
-        } catch (SQLException ex) {
-            ex.printStackTrace();
-        }
-        return pstmt;
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            return pstmt;
 }
 
     public static void main(String[] args) {

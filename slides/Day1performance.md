@@ -53,7 +53,8 @@ DELIMITER //
 ```  
 ####And call the stored procedure like this
 `CALL GetOfficeByCountry('USA');`  
-[See more here](http://www.mysqltutorial.org/stored-procedures-parameters.aspx).
+[See more here](http://www.mysqltutorial.org/stored-procedures-parameters.aspx).  
+[Example code here](../StoredProcDemo/src/main/java/data/ProcDemo.java)
 
 ##JDBC prepared statements
 Benefits are:  

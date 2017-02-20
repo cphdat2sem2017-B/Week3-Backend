@@ -25,7 +25,7 @@ public class ProcDemoTest {
         System.out.println("getPriceLevel");
         int pno = 10800;
         String expResult = "LOW";
-        String result = ProcDemo.getPriceLevel(pno);
+        String result = new ProcDemo().getPriceLevel(pno);
         assertEquals(expResult, result);
         
     }
