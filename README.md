@@ -3,7 +3,8 @@ This week we will look at some more backend. We will build on the previous 2 wee
 1. Linux server setup
 2. SQL and database design
 
-In this week we will focus on
+In this week we will focus on  
+
 **Day** | **Topic**  
 ---|---  
 1 Performance | MySql Indexes and Stored Procedures  
