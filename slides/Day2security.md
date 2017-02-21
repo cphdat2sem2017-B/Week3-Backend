@@ -1,6 +1,9 @@
 #Day 2: Security and Maintainability
 This day is about some of the security concerns we have on the backend. And how we build to maintain.
 
+##Reading:
+[If you only read one thing](http://www.unixwiz.net/techtips/sql-injection.html)
+
 ##Sql Injection
 ![](img/sqlinjection.png)    
 
