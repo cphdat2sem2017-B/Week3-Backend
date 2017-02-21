@@ -2,7 +2,7 @@
 This day is about some of the security concerns we have on the backend. And how we build to maintain.
 
 ##Sql Injection
-![](img/sqlinjection.png)    
+![](../img/sqlinjection.png)    
 
 Always make sure the input from users is checked before it is allowed into the database.
 
