@@ -8,7 +8,7 @@ In this week we will focus on
 **Day** | **Topic**  
 ---|---  
 1 Performance | MySql Indexes and Stored Procedures  
-2 Maintainability & Security Sql injection, Views, Data Mapper pattern and 3 layer architecture  
+2 Maintainability & Security | Sql injection, Views, Data Mapper pattern and 3 layer architecture  
 3 Transactions| Database transactions, Exception handling and Junit Testing  
 4 MVC pattern | MVC pattern and JSP page views  
 5 SP day | Studypoint exercise  
