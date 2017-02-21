@@ -1,7 +1,7 @@
 package data;
 
-import java.sql.CallableStatement;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -75,13 +75,22 @@ public class PartMapper {
         Statement stmt = null;
         Part part = null;
 
-        String SQLString
-                = "select * "
-                + "from parts "
                  // + "where pname = 'Land Before Time I11' or 1=1";
-               + "where pname = '" + pname + "'";
+        String SQLString = "select * from parts where pname = '" + pname + "'";
+        String SQLString2 = "SELECT * FROM parts WHERE pname = ?";
           try {
-            stmt = con.createStatement();
+            //stmt = con.createStatement();
+            
+            PreparedStatement pstmt = con.prepareStatement(SQLString2);
+            pstmt.setString(1, pname);
+            ResultSet rs2 = pstmt.executeQuery();
+            
+            
+            
+            
+            
+            
+            
             rs = stmt.executeQuery(SQLString);
 
             if (rs.next()) {
