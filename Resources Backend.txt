@@ -1,0 +1,11 @@
+Module 2
+1. https://www.lynda.com/MySQL-tutorials/Creating-indexes/139986/173318-4.html - Indexing
+2. https://www.lynda.com/MySQL-tutorials/Introducing-prepared-statements/119003/137016-4.html 
+Introducing prepared statements 
+3.  https://www.lynda.com/PHP-tutorials/SQL-injection/133321/180305-4.html - SQL injection
+4. https://www.lynda.com/Security-tutorials/SQL-injection-prevention/433940/481871-4.html - SQL
+injection prevention
+5. Understanding stored procedures and injection attacks
+ - https://www.lynda.com/Programming-Foundations-tutorials/Understanding-stored-procedures-injection-attacks/412845/438452-4.html
+
+11.11.199.101
