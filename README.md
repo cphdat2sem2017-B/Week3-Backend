@@ -13,6 +13,8 @@ In this week we will focus on
 4 MVC pattern | MVC pattern and JSP page views  
 5 SP day | Studypoint exercise  
 
+https://docs.google.com/document/d/1IP9Bgy7LCDnP8mh2TwFlt1ITK2KL8f7RrMMhpHkwnYo/edit?usp=sharing - Document for collaborative work
+
 ###Reading
 [MySql index](https://blog.viaduct.io/mysql-indexes-primer/)  
 [Stored Procedures](https://www.martinfowler.com/articles/dblogic.html)  
