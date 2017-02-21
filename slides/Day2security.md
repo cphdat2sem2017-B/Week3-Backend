@@ -5,7 +5,7 @@ This day is about some of the security concerns we have on the backend. And how 
 [If you only read one thing](http://www.unixwiz.net/techtips/sql-injection.html)
 
 ##Sql Injection
-![](img/sqlinjection.png)    
+![](../img/sqlinjection.png)    
 
 Always make sure the input from users is checked before it is allowed into the database.
 
