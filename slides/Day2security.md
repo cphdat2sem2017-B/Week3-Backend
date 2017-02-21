@@ -37,5 +37,12 @@ If you need to refactor a table that would break a lot of code, you can replace 
 - Give read acces to the user on the view  
 `GRANT SELECT ON database1.view1 TO 'someuser'@'somehost';`  
 - Create a java program that uses 2 different connections (with different users)
-	- On user is used to read from the view
+	- One user is used to read from the view
 	- Another user is used to insert data to a table
+
+##3 layer - Architecture 
+![text](../img/tavle.png)
+See the demo project for idea of how to create the
+1. Facade pattern and
+2. DataMaper pattern
+plus also how to structure a web project with folders and java packages to uphold the 3 layer structure as shown on the white board drawing above.
