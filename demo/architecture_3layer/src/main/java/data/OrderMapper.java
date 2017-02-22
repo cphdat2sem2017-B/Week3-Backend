@@ -2,6 +2,7 @@ package data;
 
 import domain.entity.Odetail;
 import domain.entity.Order;
+import domain.exception.OrderException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -14,9 +15,10 @@ import java.util.List;
  */
 public class OrderMapper {
 
-    public Order getOrder(int id) {
+    public Order getOrder(int id) throws OrderException {
         Order order = null;
         try {
+            
             Connection conn = new DB().getConnection();
             String sql = "SELECT ono, cno, eno FROM orders WHERE ono = ?";
             PreparedStatement pstmt = conn.prepareStatement(sql);
@@ -28,8 +30,9 @@ public class OrderMapper {
                 int eno = rs.getInt("eno");
                 order = new Order(ono, cno, eno);
             }
+            
         } catch (SQLException ex) {
-            ex.printStackTrace();
+            throw new OrderException("Error in getOrder()"+ex.getMessage()); 
         }
         return order;
     }
