@@ -29,6 +29,7 @@ https://docs.google.com/document/d/1IP9Bgy7LCDnP8mh2TwFlt1ITK2KL8f7RrMMhpHkwnYo/
 [Facade Pattern 2 ](https://en.wikipedia.org/wiki/Facade_pattern)
 <hr>
 [MySql Transactions](http://www.mysqltutorial.org/mysql-transaction.aspx)  
+[MySql Transactions2](https://www.tutorialspoint.com/sql/sql-transactions.htm)
 [JDBC Transactions](http://www.mysqltutorial.org/mysql-jdbc-transaction/)
 [Exception Wrapping](http://tutorials.jenkov.com/java-exception-handling/exception-wrapping.html)  
 [Database unit testing example](http://tutorials.jenkov.com/java-unit-testing/database-testing-crud.html)  
