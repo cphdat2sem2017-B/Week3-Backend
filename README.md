@@ -9,7 +9,7 @@ In this week we will focus on
 ---|---  
 1 Performance | MySql Indexes and Stored Procedures  
 2 Maintainability| Sql injection, Views, Data Mapper pattern and 3 layer architecture  
-3 Transactions| Database transactions, Exception handling and Junit Testing  
+3 Transactions| [Database transactions](study/DatabaseTransactions.md), [Exception handling](study/ExceptionHandling.md) [Exercises](exercises/TransactionExceptions.md)
 4 MVC pattern | MVC pattern and JSP page views  
 5 SP day | Studypoint exercise  
 
@@ -26,6 +26,7 @@ https://docs.google.com/document/d/1IP9Bgy7LCDnP8mh2TwFlt1ITK2KL8f7RrMMhpHkwnYo/
 [One angle on 3 Layer Architecture](http://www.tonymarston.net/php-mysql/3-tier-architecture.html)  
 [Data Mapper Pattern](https://martinfowler.com/eaaCatalog/dataMapper.html)
 [Facade Pattern to enforce layers](https://www.tutorialspoint.com/design_pattern/facade_pattern.htm)  
+[Facade Pattern 2 ](https://en.wikipedia.org/wiki/Facade_pattern)
 <hr>
 [MySql Transactions](http://www.mysqltutorial.org/mysql-transaction.aspx)  
 [JDBC Transactions](http://www.mysqltutorial.org/mysql-jdbc-transaction/)
