@@ -35,14 +35,17 @@ public class OrderMapper {
     }
     
     public void newOrder(Order order){
+            Connection conn = new DB().getConnection();
         try {
             List<Odetail> details = order.getDetails();
             //Starter transaktion
             String ins_order = "INSERT INTO orders (ono, cno, eno) VALUES (?, ?, ?)";
             String ins_odetail = "INSERT INTO odetails (ono, pno, qty) VALUES (?, ?, ?)";
-            Connection conn = new DB().getConnection();
             PreparedStatement orderStmt = conn.prepareStatement(ins_order);
             PreparedStatement odetailStmt = conn.prepareStatement(ins_odetail);
+            
+            //Transaction
+            conn.setAutoCommit(false);
             //Order
             orderStmt.setInt(1, order.getId());
             orderStmt.setInt(2, order.getCusId());
@@ -55,16 +58,22 @@ public class OrderMapper {
                 odetailStmt.setInt(3, detail.getQty());
                 odetailStmt.executeUpdate();
             }
+            conn.commit();
         } catch (SQLException ex) {
             ex.printStackTrace();
+                try {
+                    conn.rollback();
+                } catch (SQLException ex1) {
+                    ex1.printStackTrace();
+                }
         }
     }
     
     public static void main(String[] args) {
         
         OrderMapper om = new OrderMapper();
-        Order order = new Order(3, 1111, 1000);
-        order.addDetails(new Odetail(order.getId(), 10800, 10));
+        Order order = new Order(5, 1111, 1000);
+        order.addDetails(new Odetail(order.getId(), 1, 10));
         order.addDetails(new Odetail(order.getId(), 10900, 5));
         
         om.newOrder(order);
