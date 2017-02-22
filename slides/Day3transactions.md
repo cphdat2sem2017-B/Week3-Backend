@@ -16,7 +16,9 @@
 
 ##Demo in class
 1. Database transactions in Workbench
+  [read this](https://dev.mysql.com/doc/refman/5.5/en/commit.html)
 2. Database transaction with JDBC
+  [read this](http://www.mysqltutorial.org/mysql-jdbc-transaction/)
 3. Wrap and throw your sql exception
 4. jUnit test of exception throwing.
 
