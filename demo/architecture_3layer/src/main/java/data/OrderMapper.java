@@ -1,11 +1,12 @@
 package data;
 
-import domain.entity.Customer;
+import domain.entity.Odetail;
 import domain.entity.Order;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 
 /**
  *
@@ -32,9 +33,42 @@ public class OrderMapper {
         }
         return order;
     }
+    
+    public void newOrder(Order order){
+        try {
+            List<Odetail> details = order.getDetails();
+            //Starter transaktion
+            String ins_order = "INSERT INTO orders (ono, cno, eno) VALUES (?, ?, ?)";
+            String ins_odetail = "INSERT INTO odetails (ono, pno, qty) VALUES (?, ?, ?)";
+            Connection conn = new DB().getConnection();
+            PreparedStatement orderStmt = conn.prepareStatement(ins_order);
+            PreparedStatement odetailStmt = conn.prepareStatement(ins_odetail);
+            //Order
+            orderStmt.setInt(1, order.getId());
+            orderStmt.setInt(2, order.getCusId());
+            orderStmt.setInt(3, order.getEmpId());
+            orderStmt.executeUpdate();
+            //Odetails
+            for (Odetail detail : details) {
+                odetailStmt.setInt(1, order.getId());
+                odetailStmt.setInt(2, detail.getPno());
+                odetailStmt.setInt(3, detail.getQty());
+                odetailStmt.executeUpdate();
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+    }
+    
     public static void main(String[] args) {
+        
         OrderMapper om = new OrderMapper();
-        Order order = om.getOrder(1020);
-        System.out.println(order);
+        Order order = new Order(3, 1111, 1000);
+        order.addDetails(new Odetail(order.getId(), 10800, 10));
+        order.addDetails(new Odetail(order.getId(), 10900, 5));
+        
+        om.newOrder(order);
+        Order order2 = om.getOrder(1020);
+        System.out.println(order2);
     }
 }

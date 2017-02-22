@@ -26,8 +26,13 @@ public class Order {
     public int getId() {
         return id;
     }
+    
     public void addDetails(Odetail detail){
         details.add(detail);
+    }
+    
+    public List<Odetail> getDetails(){
+        return this.details;
     }
     public int getCusId() {
         return cusId;
