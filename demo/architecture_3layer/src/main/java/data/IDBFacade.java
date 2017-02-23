@@ -2,6 +2,8 @@ package data;
 
 import domain.entity.Customer;
 import domain.entity.Employee;
+import domain.entity.Order;
+import domain.exception.OrderException;
 import java.util.List;
 
 /**
@@ -12,4 +14,5 @@ public interface IDBFacade {
 Customer getCustomer(int id);
 List<Customer> getCustomers();
 Employee getEmployee(int id);
+Order getOrder(int id) throws OrderException;
 }

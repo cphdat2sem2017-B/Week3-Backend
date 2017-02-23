@@ -2,6 +2,8 @@ package data;
 
 import domain.entity.Customer;
 import domain.entity.Employee;
+import domain.entity.Order;
+import domain.exception.OrderException;
 import java.util.List;
 
 /**
@@ -10,6 +12,8 @@ import java.util.List;
  */
 public class DBFacade implements IDBFacade{
     CustomerMapper cm = new CustomerMapper();
+    OrderMapper om = new OrderMapper();
+    
     @Override
     public Customer getCustomer(int id) {
         return cm.getCustomer(id);
@@ -23,6 +27,11 @@ public class DBFacade implements IDBFacade{
     @Override
     public Employee getEmployee(int id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Order getOrder(int id) throws OrderException {
+        return om.getOrder(id);
     }
 
 }

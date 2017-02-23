@@ -80,7 +80,7 @@ public class OrderMapper {
         order.addDetails(new Odetail(order.getId(), 10900, 5));
         
         om.newOrder(order);
-        Order order2 = om.getOrder(1020);
-        System.out.println(order2);
+        //Order order2 = om.getOrder(1020);
+        //System.out.println(order2);
     }
 }
