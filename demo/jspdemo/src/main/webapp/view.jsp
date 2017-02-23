@@ -14,6 +14,7 @@
     <body>
         <h1>Data from the form:</h1>
         Username <% out.print(session.getAttribute("username")); %><br>
-        Password <% out.print(session.getAttribute("password")); %>
+        Password <% out.print(session.getAttribute("password")); %><br>
+        Today is <%= (new java.util.Date())%> 
     </body>
 </html>

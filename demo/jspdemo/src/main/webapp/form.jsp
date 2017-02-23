@@ -14,7 +14,7 @@
     <body>
         <h1>Enter data</h1>
         <form name="form1" action="Control" method="POST">
-            <input type="text" name="username" value="" />
+            <input type="text" name="user" value="" />
             <input type="text" name="password" value="" />
             <input type="submit" value="Enter data" name="submit" />
         </form>

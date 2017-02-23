@@ -25,10 +25,12 @@ public class Control extends HttpServlet {
     throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         //Get data from jsp form
-        String username = request.getParameter("username");
+        String username = request.getParameter("user");
         String password = request.getParameter("password");
         request.getSession().setAttribute("username", username);
         request.getSession().setAttribute("password", password);
+        
+        request.setAttribute("username", username);
         request.getRequestDispatcher("view.jsp").forward(request, response);
     } 
 
