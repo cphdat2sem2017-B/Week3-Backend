@@ -1,12 +1,13 @@
 #Day 4: JSP and MVC pattern  
 
-
-![text](../img/tavle.png)
+![](../img/MVC.png) 
 
 The MVC pattern translates to Model-View-Control
 The idea is that we want modularize the architecture.
 
-![](../img/MVC.png)  
+A quick white board drawing of the entire web application architecture on 2. semester could look like this: 
+
+![text](../img/tavle.png) 
 
 [Reading reference](https://www.tutorialspoint.com/design_pattern/mvc_pattern.htm)
 
