@@ -16,5 +16,6 @@
         Username <% out.print(session.getAttribute("username")); %><br>
         Password <% out.print(session.getAttribute("password")); %><br>
         Today is <%= (new java.util.Date())%> 
+        
     </body>
 </html>

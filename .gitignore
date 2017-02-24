@@ -39,3 +39,5 @@ hs_err_pid*
 /demo/SqlInjectionDemo/target/
 /demo/architecture_3layer/target/
 /demo/jspdemo/target/
+/demo/jspdemo - Copy/target/
+/demo/crossSideScripting/target/
